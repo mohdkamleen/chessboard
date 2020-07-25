@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+           /* chesboard css part  */
+
+           .ches{
+            width: 450px; 
+            height:450px;  
+            margin: 20px;
+            overflow-x: auto;
+        }
+
+            .ches div{
+                height:50px;
+            }
+
+            .ches>div>div{
+                width:50px; 
+                height:100%;
+                display:inline-block; 
+                vertical-align:top;
+                border: 1px solid gray;
+            }
+
+            .ches div:nth-child(odd) div:nth-child(even),
+            .ches div:nth-child(even) div:nth-child(odd) {
+                background-color:black; 
+                color:white;
+            }
+
+            h1{
+            color: #555555;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="ches">
+        
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+    </div> <br> 
+</body>
+</html>
