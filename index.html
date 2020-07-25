@@ -67,5 +67,25 @@
             <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
         </div>
     </div> <br> 
+
+
+    <script>
+        window.onload = () => {
+            
+        if('serviceWorker' in  navigator){
+            navigator.serviceWorker.register('./sw.js')
+            .then(e => {
+             return console.info("service worker register", e)
+               })
+               .catch(error => {
+                   console.error('srvice worker is not register', error);
+               })
+    
+        } else {
+            console.error('srvice worker is not suported in your browser')
+        }
+    }
+          
+    </script>
 </body>
 </html>
